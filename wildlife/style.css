@@ -60,10 +60,12 @@ body {
     line-height: 60px;
     text-transform: uppercase;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .logo__img {
     padding-right: 15.5px;
+    cursor: pointer;
 }
 
 .header {
@@ -92,6 +94,15 @@ body {
 }
 
 
+.nav__search:hover {
+    transition: 1s;
+    width: 28px;
+    height: 28px;
+    transform: scale(1.2);
+}
+
+
+
 
 .nav__link {
     /* font-family: Open Sans; */
@@ -101,8 +112,14 @@ body {
 
     display: block;
     text-decoration: none;
-
 }
+
+.nav__link:hover,
+.footer-nav__link:hover{
+    color:#E39128;
+}
+
+
 
 .sign-in {
     border: 2px solid #CD6326;
@@ -115,6 +132,20 @@ body {
     font-family: 'Roboto', sans-serif;
     transform: translate(-3px, 0);
 }
+
+.sign-in:hover{
+
+    border: 2px solid #CD6326;
+    background: #CD6326;
+    color: var(--font-light);
+
+}
+
+.sign-in:active{
+    border: 2px solid #8F5613;
+    background: #8F5613;
+}
+
 
 .survival {
     padding-top: 121px;
@@ -152,9 +183,16 @@ body {
     border: none;
     font-size: 23px;
     line-height: 27px;
-
+    color: var(--font-light);
 }
 
+.survival__button:hover{
+    background: #E39128;
+}
+
+.survival__button:active{
+    background: #8F5613;
+}
 
 .main__wrapper {
     background: var(--bg-main);
@@ -199,6 +237,15 @@ body {
     transform: translate(0, -80%);
     cursor: pointer;
 }
+
+.slider__prev:hover,
+.slider__next:hover {
+    transition: 1s;
+    width: 34.5px;
+    height: 44.85px;
+
+}
+
 
 .slider__item>h4{
     transform: translate(0, -116px);
@@ -266,7 +313,12 @@ body {
     border: 1px solid #CD6326;
     border-radius: 0 5px 5px 0;
     color: #F7F7F7;
+    cursor: pointer;
+}
 
+.form__submit:hover {
+    background: #E39128;
+    border: 1px solid #E39128;
 
 }
 
@@ -336,6 +388,34 @@ input[placeholder] {
 }
 
 .footer-contacts__link {
-    display: flex;
-    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+
+.footer-contacts__link:hover {
+    transition: 1s;
+    transform: scale(1.2);
+
+}
+
+.facebook {
+    background: url(assets/facebook.svg) center no-repeat;
+}
+
+.instagram {
+    background: url(assets/instag.svg) center no-repeat;
+}
+
+.pinterest {
+    background: url(assets/r.svg) center no-repeat;
+}
+
+.telegram {
+    background: url(assets/telegram.svg) center no-repeat;
 }
